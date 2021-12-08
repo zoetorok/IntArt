@@ -1,0 +1,74 @@
+body {
+    cursor: pointer;
+    overflow: hidden;
+    background-color: white;
+  }
+
+  @keyframes slide {
+      0%{left: 100px;}
+      100%{left: 1600px;}  
+  }
+
+  #i1 {
+    background: url(images/1.png);
+    position: absolute;
+    width: 625px;
+    height: 450px;
+    top: 0%;
+    box-shadow: 2px 2px 20px 23px blue;
+    animation-name: slide;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+  }
+
+
+  #i2 {
+    background: url(images/2.png);
+    position: absolute;
+    width: 625px;
+    height: 450px;
+    top: 50%;
+    box-shadow: 2px 2px 20px 23px deeppink;
+    animation-name: slide;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    animation-delay: 1s;
+  }
+
+  #i3{
+    background: url(images/3.png);
+    position: absolute;
+    width: 650px;
+    height: 550px;
+    top: 00%;
+    box-shadow: 2px 2px 20px 23px coral;
+    animation-name: slide;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    animation-delay: 3s;
+  }
+
+  #i4{
+    background: url(images/4.png);
+    position: absolute;
+    width: 650px;
+    height: 550px;
+    top: 50%;
+    box-shadow: 2px 2px 20px 23px rgb(255, 255, 255);
+    animation-name: slide;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    animation-delay: 4.2s;
+  }
+  #i5{
+    background: url(images/5.png);
+    position: absolute;
+    width: 600px;
+    height: 530px;
+    top: 00%;
+    box-shadow: 2px 2px 20px 23px plum;
+    animation-name: slide;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    animation-delay: 5.6s;
+  }
