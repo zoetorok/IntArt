@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+</head>
+
+<body style="background-color: rgb(223, 124, 180);">
+    <h1 style="text-align:center">what is art?</h1>
+    <script>
+        var startTime;
+        var endTime;
+        setInterval(
+            function start() {
+                var randomColor = Math.floor(Math.random() * 16777215).toString(16);
+                document.body.style.backgroundColor = "#" + randomColor;
+                startTime = performance.now();
+            }, Math.random() * 6000);
+        function end() {
+            var text = "is this art?";
+            var randomW = Math.round(Math.random() * window.innerWidth);
+            var randomH = Math.round(Math.random() * window.innerHeight);
+            
+            var elem = document.createElement("div");
+            elem.textContent = text;
+            elem.style.position = "absolute"; 
+            elem.style.left = randomW + "px";
+            elem.style.top = randomH + "px";
+            elem.style.color = "white";
+            elem.style.fontSize = "x-large";
+            elem.style.transform = "rotate(" + Math.round(Math.random() * 360) + "deg)";
+            document.body.appendChild(elem);
+        }
+    </script>
+    <button style="position: absolute; left: 50%; transform: translateX(-50%);" onclick="end()">BUTTON</button>
+</body>
+
+</html>
